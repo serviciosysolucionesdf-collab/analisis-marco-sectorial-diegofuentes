@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis Crítico del Marco Sectorial – Diego Fuentes</title>
+
+    <!-- CSS PRINCIPAL -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- ANIMACIONES AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- SWEETALERT2 (modales premium) -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- SWIPER (carrusel premium) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- APEXCHARTS (gráficos profesionales) -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <!-- HTML2PDF PARA EXPORTAR -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR SUPERIOR -->
+    <nav>
+        <h2 id="navTitle">Análisis crítico del marco sectorial – Diego Fuentes</h2>
+        <div class="nav-right">
+            <div class="lang-toggle">
+                <button class="lang-btn active" data-lang="es">ES</button>
+                <span>|</span>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <button id="modoBtn">Modo claro / oscuro</button>
+        </div>
+    </nav>
+
+    <!-- PORTADA -->
+    <header>
+        <h1 id="mainTitle">Análisis crítico e interactivo del Acuerdo Marco Sectorial del carbón</h1>
+        <p id="mainSub" class="sub">
+            Comparación entre redacción original, corrección y comentarios críticos.
+        </p>
+
+        <button id="btnIniciar">Ver análisis</button>
+    </header>
+
+    <!-- SECCIÓN DE TARJETAS INTERACTIVAS -->
+    <section id="analisis" class="hidden"></section>
+
+    <!-- SECCIÓN DE GRÁFICOS -->
+    <section id="graficos" class="hidden">
+        <h2 id="chartsTitle">Nivel de problema en la redacción y el contenido</h2>
+        <div id="chart"></div>
+    </section>
+
+    <!-- CARRUSEL -->
+    <section id="carrusel" class="hidden">
+        <h2 id="carouselTitle">Puntos más delicados del acuerdo</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper" id="swiperWrapper"></div>
+        </div>
+    </section>
+
+    <!-- BOTONES DE ACCIÓN -->
+    <div id="acciones" class="hidden actions">
+        <button id="btnPDF">Descargar análisis en PDF</button>
+        <button id="btnComparar">Resumen crítico general</button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p id="footerText">
+            Desarrollado por <strong>Diego Fuentes</strong> © 2025
+        </p>
+    </footer>
+
+    <!-- LIBRERÍAS JS FINALES -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- ARCHIVO JS PRINCIPAL -->
+    <script src="script.js"></script>
+
+</body>
+</html>

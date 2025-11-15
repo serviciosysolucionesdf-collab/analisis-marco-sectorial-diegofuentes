@@ -1,0 +1,281 @@
+/* ============================================
+   ESTILOS PRINCIPALES – DIEGO FUENTES
+   Tema: DARK GOLD + LIGHT MODE CON ALTO CONTRASTE
+   ============================================ */
+
+:root {
+    --bg-dark: #050509;
+    --bg-card-dark: #141318;
+    --text-dark: #f5f5f5;
+    --border-gold: #c9a227;
+    --accent-gold: #c9a227;
+    --accent-gold-soft: #f0d27a;
+
+    --bg-light: #f4f4f8;
+    --bg-card-light: #ffffff;
+    --text-light: #111111;
+    --text-muted-light: #555555;
+}
+
+/* MODO OSCURO POR DEFECTO */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-dark);
+    margin: 0;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* MODO CLARO */
+body.light {
+    background: var(--bg-light);
+    color: var(--text-light);
+}
+
+/* NAV */
+nav {
+    background: #000000;
+    padding: 10px 15px;
+    color: var(--accent-gold);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* TOGGLE IDIOMA */
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.9rem;
+}
+
+.lang-btn {
+    background: transparent;
+    border: none;
+    color: var(--accent-gold);
+    cursor: pointer;
+    font-weight: 400;
+    padding: 2px 4px;
+}
+
+.lang-btn.active {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* BOTÓN MODO */
+nav button#modoBtn {
+    background: var(--accent-gold);
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: #000;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #000000 60%, #3b2a00 100%);
+}
+
+body.light header {
+    background: linear-gradient(135deg, #ffffff 60%, #ffe9a2 100%);
+    color: #141414;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.sub {
+    color: #dcdcdc;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+body.light .sub {
+    color: #444444;
+}
+
+#btnIniciar {
+    padding: 12px 25px;
+    background: var(--accent-gold);
+    color: #000;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
+}
+
+#btnIniciar:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 12px rgba(201, 162, 39, 0.6);
+}
+
+/* TARJETAS */
+.card {
+    background: var(--bg-card-dark);
+    border-left: 5px solid var(--border-gold);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+body.light .card {
+    background: var(--bg-card-light);
+    border-left-color: var(--accent-gold);
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.45);
+}
+
+body.light .card:hover {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    color: var(--accent-gold);
+    font-size: 1.1rem;
+}
+
+.card p {
+    margin: 0;
+    color: #c8c8c8;
+    font-size: 0.95rem;
+}
+
+body.light .card p {
+    color: var(--text-muted-light);
+}
+
+/* SECCIÓN GRÁFICOS */
+#graficos {
+    padding: 20px;
+    text-align: center;
+}
+
+#graficos h2 {
+    margin-bottom: 15px;
+}
+
+#chart {
+    max-width: 800px;
+    margin: auto;
+    background: #111111;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+body.light #chart {
+    background: #ffffff;
+}
+
+/* CARRUSEL */
+#carrusel {
+    padding: 20px;
+    text-align: center;
+}
+
+.swiper {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.swiper-slide {
+    background: #141318;
+    color: white;
+    border: 1px solid var(--accent-gold);
+    border-radius: 12px;
+    padding: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+}
+
+body.light .swiper-slide {
+    background: #ffffff;
+    color: #000;
+}
+
+/* BOTONES DE ACCIÓN */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.actions button {
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: var(--accent-gold);
+    color: #000;
+    font-size: 0.9rem;
+}
+
+/* FOOTER */
+footer {
+    background: #000000;
+    text-align: center;
+    padding: 18px;
+    font-size: 0.85rem;
+    color: #f0f0f0;
+}
+
+body.light footer {
+    background: #111111;
+    color: #f5f5f5;
+}
+
+/* UTILIDAD */
+.hidden {
+    display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    nav h2 {
+        margin-bottom: 5px;
+    }
+
+    .nav-right {
+        width: 100%;
+        justify-content: center;
+        margin-top: 6px;
+    }
+}
